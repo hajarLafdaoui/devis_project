@@ -1,0 +1,190 @@
+:root {
+    --btn-color: #f0094a; /* Couleur du bouton */
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .content {
+    padding: 20px;
+    margin-top: 60px;
+    opacity: 0; /* Commence caché */
+    transform: translateX(-50px); /* Commence hors écran à gauche */
+  }
+  
+  .navbar {
+    opacity: 0; /* Commence caché */
+    transform: translateY(-50px); /* Commence hors écran en haut */
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+  }
+  
+  .nav-item + .nav-item {
+    margin-left: 20px; /* Ajuster l'espacement entre les éléments de navigation */
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    position: relative;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--btn-color);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: grey;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  a {
+    color: #000;
+  }
+  a:hover{
+    color: #666;
+
+  }
+  
+  .btn-5 {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none !important;
+    background: rgb(255,27,0);
+    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: background 0.4s, color 0.4s;
+  }
+  
+  .btn-5:hover {
+    color: var(--btn-color);
+    background: transparent;
+    box-shadow: none;
+    border: none !important;
+
+  }
+  
+  .btn-5:before,
+  .btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 2px;
+    width: 0;
+    background: var(--btn-color);
+    box-shadow:
+      -1px -1px 5px 0px #fff,
+      7px 7px 20px 0px #0003,
+      4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+    border: none !important;
+
+  }
+  
+  .btn-5:after {
+    top: inherit;
+    bottom: 0;
+    left: inherit;
+    right: 0;
+  }
+  
+  .btn-5:hover:before,
+  .btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+  
+  /* Couleur de l'icône du toggler de la navbar */
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg fill="%23000" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h14M3 10h14M3 14h14" stroke="%23000" stroke-width="2"/></svg>');
+  }
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  .img {
+    margin-left: 200px;
+    width: 600px;
+    opacity: 0; /* Commence caché */
+    transform: translateX(-50px); /* Commence hors écran à gauche */
+  }
+  
+  /* Ajustements responsive */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: left;
+      margin-top: 10px;
+    }
+    .nav-item {
+      margin-left: 0;
+    }
+    .ml-auto {
+      margin-left: 0;
+    }
+  
+    .navbar-nav {
+      margin-bottom: 15px;
+    }
+  
+    .nav-item + .nav-item {
+      margin-left: 0;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: var(--btn-color);
+      transition: width 0.3s ease-in-out;
+    }
+  
+    .nav-link:hover::after {
+      width: 30%;
+    }
+    .img {
+      width: 300px;
+      margin-left: 0px !important;
+    }
+  }
+  /* choose */
+
+  /* Style for content */
+a{
+  text-decoration: none !important;
+  color: #000;
+}

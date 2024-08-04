@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --text-color: #344e41;
+    --blue-color: #fb8500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+}
+
+.DevisContainer {
+    margin: 8px 0;  /* Reduced margin */
+    border: 1px solid #ddd;
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+.address, .phone, .number, .devisNumber, .agencyCity, .agency-name, .fullName, .clientAdress, .clientNumber, .clientEmail, .numClient {
+    margin: 0 !important;
+    padding: 2px !important;
+}
+
+.devisNumber {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.ClientInfo::before {
+    content: "Client: ";
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.contact-info {
+    margin-left: 12px;
+}
+
+.DevisHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column !important;
+    align-items: start;
+    padding: 10px 15px 25px 10px;  /* Reduced padding */
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color {
+    background: #fb8500;
+    color: #fff;
+}
+
+.email, .phone {
+    display: inline;
+}
+
+.DevisHeaderTitle {
+    flex: 2;
+    text-align: right;
+    margin-right: 80px;  /* Adjusted margin */
+    margin-top: 15px;  /* Adjusted margin */
+}
+
+.ContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DevisHeaderLogo img {
+    max-height: 80px;  /* Reduced height */
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;  /* Reduced margin */
+}
+
+/* Styling for AgencyInfo */
+.AgencyInfo {
+    border-radius: 8px;
+    padding: 15px;  /* Reduced padding */
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.AgencyInfo p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.AgencyInfo .agency-name {
+    font-weight: bold;
+    font-family: "Playwrite CU", cursive;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/* Styling for ClientInfoWrapper */
+.ClientInfoWrapper {
+    border-radius: 8px;
+    padding: 15px;  /* Reduced padding */
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Table styles */
+.table.main-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+    margin-top: 15px;  /* Reduced margin */
+}
+
+.table.main-table thead th {
+    padding: 10px 15px;  /* Reduced padding */
+    text-align: left;
+    border-bottom: 2px solid var(--blue-color);
+    background-color: transparent;
+}
+
+.table.main-table th, .table.main-table td {
+    background-color: transparent;
+    padding: 8px 12px;  /* Reduced padding */
+    font-size: large;
+    font-weight: 400;
+    border: none;
+}
+
+.table.main-table tbody tr {
+    border-bottom: 2px solid var(--blue-color);
+}
+
+.table.main-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Footer styles */
+.footer-table {
+    width: 30%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+}
+
+.footer-table td {
+    text-align: right;
+    border: none;
+}
+
+.footer-table td:first-child {
+    font-weight: bold;
+    padding-left: 0;
+    text-align: left;
+    white-space: nowrap;
+    color: #fb8500;
+}
+
+.footer-table td:last-child {
+    text-align: left;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+.default, .first, .second {
+    display: none;
+}
+
+.second {
+    text-align: end;
+    margin-right: 115px;
+}
+
+.third {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.veuillez {
+    text-align: center;
+    margin: 60px 0;  /* Reduced margin */
+    font-size: large;
+    font-weight: 400;
+}
+
+.DateSin::before, .singature::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #fb8500;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.DateSin::before, .singature {
+    text-align: center;
+}
+
+.date::before {
+    content: "Date: ";
+    font-size: large;
+    font-weight: 400;
+}
+
+.agency-name {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.fin {
+    text-align: center;
+    color: #666;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.p-condition {
+    font-size: large;
+    font-weight: bold;
+}
+
+#Download {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#Download:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#Download:active {
+    background-color: #388e3c;
+    transform: scale(1.02);
+}

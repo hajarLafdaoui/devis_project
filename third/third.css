@@ -1,0 +1,302 @@
+/* AGENCY NAME */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --text-color: #344e41; /* Define text color variable */
+    --blue-color: #588157; /* Define blue color variable */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color); /* Use variable for text color */
+}
+
+body {
+    color: var(--text-color);
+     /* Use variable for body text color */
+}
+
+.DevisContainer {
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid #ccc;
+    background-color: #fefae0; 
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.address, .phone, .number, .devisNumber, .agencyCity, .agency-name, .fullName, .clientAdress, .clientNumber, .clientEmail {
+    margin: 0 !important;
+    padding: 2px !important;
+    color: var(--text-color); /* Use variable for text color */
+}
+
+.DevisHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue-color); /* Use variable for header background color */
+    color: white !important;
+    padding: 15px 25px 35px 15px;
+}
+
+.DevisHeaderTitle {
+    flex: 2;
+    color: white; /* Use variable for header title color */
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.ContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DevisHeaderLogo img {
+    max-height: 100px; 
+}
+
+/* Styling for AgencyInfo */
+.AgencyInfo {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.AgencyInfo p {
+    margin: 0;
+    padding: 5px 0;
+    color: var(--text-color); /* Use variable for paragraph text color */
+    font-size: 16px;
+}
+
+.AgencyInfo .agency-name {
+    color: var(--blue-color); /* Use variable for agency name color */
+    font-weight: bold;
+    font-family: "Playwrite CU", cursive;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.AgencyInfo .address {
+    font-style: italic;
+}
+.AgencyInfo .address::before {
+    content: "🏠 ";
+}
+
+.AgencyInfo .phone::before {
+    content: "📞 ";
+}
+
+.AgencyInfo .email::before {
+    content: "📧 ";
+}
+
+/* Styling for ClientInfoWrapper */
+.ClientInfoWrapper {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.ClientInfo p {
+    margin: 0;
+    padding: 5px 0;
+    color: var(--text-color); /* Use variable for paragraph text color */
+    font-size: 16px;
+}
+
+.ClientInfo::before {
+    content: " Customer";
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--blue-color); /* Use variable for client info header color */
+    padding: 0;
+    font-weight: bold;
+    font-family: "Playwrite CU", cursive;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/* Table styles */
+.table.main-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+    margin-top: 20px;
+}
+
+.table.main-table thead th {
+    padding: 12px 20px;
+    text-align: left;
+    border-right: 2px solid var(--blue-color); /* Use variable for table header border color */
+    border-bottom: 2px solid var(--blue-color); /* Use variable for table header border color */
+    border-top: none; 
+    border-left: none; 
+    background-color: transparent;
+
+}
+
+.table.main-table thead th:last-child {
+    border-right: none;
+}
+
+.table.main-table th,
+.table.main-table td {
+    background-color: transparent;
+
+    padding: 10px 15px;
+    color: var(--text-color); /* Use variable for table text color */
+}
+
+.table.main-table tbody tr td {
+    border-right: 2px solid var(--blue-color); /* Use variable for table cell border color */
+}
+
+.table.main-table tbody tr td:last-child {
+    border-right: none; 
+}
+
+.table.main-table tbody tr {
+    border-bottom: 2px solid var(--blue-color); /* Use variable for table row border color */
+}
+
+.table.main-table tbody tr:last-child {
+    border-bottom: none; 
+}
+
+.table.main-table tbody tr td:first-child {
+    border-left: none;
+}
+
+.table.main-table tbody tr:last-child td {
+    border-bottom: none; 
+}
+
+.table.main-table tbody tr td:first-child {
+    border-left: none;
+}
+
+/* Footer styles */
+.footer-table {
+    width: 30%;
+    margin-top: 20px;
+    margin-left: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+    margin-right: 30px;
+}
+
+.footer-table td {
+    text-align: right;
+    border: none;
+    color: var(--text-color); /* Use variable for footer table text color */
+}
+
+.footer-table td:first-child {
+    font-weight: bold;
+    color: var(--blue-color); /* Use variable for footer table headers color */
+    padding-left: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.footer-table td:last-child {
+    text-align: left;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+.footer-table tr td {
+    border-bottom: none;
+    border-top: none;
+}
+
+.footer-table tr td:first-child {
+    border-left: none;
+}
+
+.footer-table tr td:last-child {
+    border-right: none;
+}
+
+.default, .first, .second {
+    display: none;
+}
+
+.second {
+    text-align: end;
+    margin-right: 115px;
+}
+.third{
+    margin-left: 12px;
+}
+.inp{
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #a3b18a;
+}
+.Date,.singature{
+  
+}
+@media (max-width: 600px) {
+    .second::after {
+        margin-right: 0px;
+    }
+  
+}
+
+.fin {
+   
+    display: none;  
+}
+.thirdFin{
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.condition {
+    display: none;
+}
+
+#Download {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#Download:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#Download:active {
+    background-color: #388e3c;
+    transform: scale(1.02);
+}
